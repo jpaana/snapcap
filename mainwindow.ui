@@ -1,0 +1,182 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>MainWindow</class>
+ <widget class="QMainWindow" name="MainWindow">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>400</width>
+    <height>300</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>SnapCap</string>
+  </property>
+  <widget class="QWidget" name="centralWidget">
+   <layout class="QVBoxLayout" name="verticalLayout">
+    <item>
+     <layout class="QHBoxLayout" name="horizontalLayout_6">
+      <item>
+       <widget class="QLabel" name="connectionStatus">
+        <property name="text">
+         <string>TextLabel</string>
+        </property>
+        <property name="alignment">
+         <set>Qt::AlignCenter</set>
+        </property>
+       </widget>
+      </item>
+     </layout>
+    </item>
+    <item>
+     <layout class="QHBoxLayout" name="horizontalLayout">
+      <item>
+       <widget class="QComboBox" name="serialPort"/>
+      </item>
+      <item>
+       <widget class="QPushButton" name="connectButton">
+        <property name="text">
+         <string>Connect</string>
+        </property>
+       </widget>
+      </item>
+     </layout>
+    </item>
+    <item>
+     <layout class="QHBoxLayout" name="horizontalLayout_3">
+      <item>
+       <widget class="QPushButton" name="openButton">
+        <property name="text">
+         <string>Open</string>
+        </property>
+       </widget>
+      </item>
+      <item>
+       <widget class="QPushButton" name="closeButton">
+        <property name="text">
+         <string>Close</string>
+        </property>
+       </widget>
+      </item>
+      <item>
+       <widget class="QLabel" name="coverStatus">
+        <property name="text">
+         <string>TextLabel</string>
+        </property>
+       </widget>
+      </item>
+     </layout>
+    </item>
+    <item>
+     <layout class="QHBoxLayout" name="horizontalLayout_4">
+      <item>
+       <widget class="QPushButton" name="onButton">
+        <property name="text">
+         <string>Light On</string>
+        </property>
+       </widget>
+      </item>
+      <item>
+       <widget class="QPushButton" name="offButton">
+        <property name="text">
+         <string>Light Off</string>
+        </property>
+       </widget>
+      </item>
+      <item>
+       <widget class="QLabel" name="lightStatus">
+        <property name="text">
+         <string>TextLabel</string>
+        </property>
+       </widget>
+      </item>
+     </layout>
+    </item>
+    <item>
+     <layout class="QHBoxLayout" name="horizontalLayout_5">
+      <item>
+       <widget class="QSlider" name="brightnessSlider">
+        <property name="minimum">
+         <number>25</number>
+        </property>
+        <property name="maximum">
+         <number>100</number>
+        </property>
+        <property name="orientation">
+         <enum>Qt::Horizontal</enum>
+        </property>
+       </widget>
+      </item>
+      <item>
+       <widget class="QLabel" name="brightnessText">
+        <property name="text">
+         <string>TextLabel</string>
+        </property>
+       </widget>
+      </item>
+     </layout>
+    </item>
+    <item>
+     <layout class="QHBoxLayout" name="horizontalLayout_2">
+      <item>
+       <widget class="QPushButton" name="forceOpenButton">
+        <property name="text">
+         <string>Force Open</string>
+        </property>
+       </widget>
+      </item>
+      <item>
+       <widget class="QPushButton" name="forceCloseButton">
+        <property name="text">
+         <string>Force Close</string>
+        </property>
+       </widget>
+      </item>
+      <item>
+       <widget class="QPushButton" name="abortButton">
+        <property name="text">
+         <string>Abort</string>
+        </property>
+       </widget>
+      </item>
+     </layout>
+    </item>
+   </layout>
+  </widget>
+  <widget class="QMenuBar" name="menuBar">
+   <property name="geometry">
+    <rect>
+     <x>0</x>
+     <y>0</y>
+     <width>400</width>
+     <height>25</height>
+    </rect>
+   </property>
+   <widget class="QMenu" name="menuSnapCap">
+    <property name="title">
+     <string>SnapCap</string>
+    </property>
+    <addaction name="actionQuit"/>
+   </widget>
+   <addaction name="menuSnapCap"/>
+  </widget>
+  <widget class="QToolBar" name="mainToolBar">
+   <attribute name="toolBarArea">
+    <enum>TopToolBarArea</enum>
+   </attribute>
+   <attribute name="toolBarBreak">
+    <bool>false</bool>
+   </attribute>
+  </widget>
+  <widget class="QStatusBar" name="statusBar"/>
+  <action name="actionQuit">
+   <property name="text">
+    <string>Quit</string>
+   </property>
+  </action>
+ </widget>
+ <layoutdefault spacing="6" margin="11"/>
+ <resources/>
+ <connections/>
+</ui>

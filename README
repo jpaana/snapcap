@@ -1,0 +1,9 @@
+Simple standalone control application for Gemini SnapCap motorized
+OTA cap (http://www.geminitelescope.com/snapcap-motorized-tube-ota-cap)
+
+Implemented as a Qt application, requires Qt5, version 5.5 and 5.9
+tested and Qt5SerialPort addon (libqt5serialport5-dev in Ubuntu)
+
+To compile, just run qmake and make or load the project in QtCreator.
+
+
