@@ -1,0 +1,15 @@
+Source: snapcap
+Section: science
+Priority: optional
+Maintainer: Jarno Paananen <jarno.paananen@gmail.com>
+Build-Depends: debhelper (>=9), qtbase5-dev, qtbase5-dev-tools, qt5-qmake, libqt5serialport5-dev
+Standards-Version: 3.9.6
+Homepage: https://github.com/jpaana/snapcap
+Vcs-Git: git@github.com:jpaana/snapcap.git
+Vcs-Browser: https://github.com/jpaana/snapcap.git
+
+Package: snapcap
+Architecture: any
+Depends: ${shlibs:Depends}, ${misc:Depends}
+Description: Control program for Gemini SnapCap
+ Control program for Gemini SnapCap motorized OTA cap and flat light.
