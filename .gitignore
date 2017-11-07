@@ -1,0 +1,10 @@
+bin/
+build/
+src/Makefile
+*~
+
+debian/.debhelper/
+debian/snapcap.debhelper.log
+debian/snapcap.substvars
+debian/snapcap/
+				
